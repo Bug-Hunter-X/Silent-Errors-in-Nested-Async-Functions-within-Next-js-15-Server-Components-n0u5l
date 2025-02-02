@@ -1,0 +1,3 @@
+# Silent Errors in Nested Async Functions within Next.js 15 Server Components
+
+This repository demonstrates a subtle bug in Next.js 15 server components where errors in deeply nested asynchronous operations might not be properly handled and propagated, leading to silent failures.  The problem is particularly tricky to debug because there are no obvious error messages in the console or browser's developer tools.  The provided example uses a simulated error but the same issue could appear in a complex data fetching process.  See the `bug.js` file for the problematic code and `bugSolution.js` for a solution using comprehensive error handling techniques.
